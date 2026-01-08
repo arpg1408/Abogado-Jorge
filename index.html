@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-NI">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios Jurídicos - Abogado Jorge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios jurídicos profesionales en Nicaragua. Asesoría en derecho corporativo, inmobiliario, civil, administrativo y laboral.">
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f6f8; color: #333; }
+        header { background-color: #1f3a5f; color: white; padding: 30px 20px; text-align: center; }
+        header img { width: 160px; border-radius: 50%; margin-top: 15px; }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        h2 { color: #1f3a5f; margin-bottom: 15px; }
+        .services ul { list-style: none; padding: 0; }
+        .services li { background: white; padding: 12px; margin-bottom: 10px; border-left: 5px solid #1f3a5f; }
+        .office img { width: 100%; border-radius: 8px; margin-top: 15px; }
+        form { background: white; padding: 25px; border-radius: 8px; }
+        label { font-weight: bold; display: block; margin-top: 15px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { margin-top: 20px; padding: 12px; background-color: #1f3a5f; color: white; border: none; width: 100%; font-size: 16px; border-radius: 5px; cursor: pointer; }
+        button:focus, input:focus, textarea:focus { outline: 3px solid rgba(31,58,95,0.15); }
+        footer { background-color: #1f3a5f; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+        .small { font-size: 0.9rem; color: #666; margin-top: 10px; }
+        a { color: #1f3a5f; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Servicios Jurídicos Profesionales</h1>
+    <p>Asesoría legal integral y confiable</p>
+    <img src="img/perfil.jpg" alt="Foto del abogado Jorge">
+</header>
+
+<section class="services" aria-labelledby="areas-practica">
+    <h2 id="areas-practica">Áreas de Práctica</h2>
+    <ul>
+        <li>Derecho Corporativo</li>
+        <li>Derecho Inmobiliario</li>
+        <li>Derecho Civil y Comercial</li>
+        <li>Derecho Administrativo</li>
+        <li>Derecho Laboral</li>
+    </ul>
+</section>
+
+<section aria-labelledby="contacto-info">
+    <h2 id="contacto-info">Información de Contacto</h2>
+    <p><strong>Teléfono:</strong> <a href="tel:+50587876651">+505 8787 6651</a></p>
+    <p><strong>Dirección:</strong> Oficentro Corporativo, Oficina 5, Pista Jean Paul Genie, contiguo a Grupo Q, Nicaragua</p>
+</section>
+
+<section class="office" aria-labelledby="ubicacion">
+    <h2 id="ubicacion">Ubicación de la Oficina</h2>
+    <img src="img/edificio.jpg" alt="Fachada del edificio de la oficina">
+</section>
+
+<section aria-labelledby="formulario">
+    <h2 id="formulario">Formulario de Contacto</h2>
+
+    <!-- Variante A: mailto (rápido, reemplaza TU_CORREO@DOMINIO.COM por tu email) -->
+    <form id="form-mailto" action="mailto:abg.jorgeacuna@gmail.com?subject=Consulta%20desde%20sitio%20web&body=Nombre:%20%0AEmail:%20%0ATeléfono:%20%0AMensaje:%20" method="post" enctype="text/plain" aria-label="Formulario de contacto (mailto)">
+        <label for="nombreA">Nombre completo</label>
+        <input id="nombreA" name="Nombre" type="text" placeholder="Ej. Juan Pérez" required>
+
+        <label for="emailA">Correo electrónico</label>
+        <input id="emailA" name="Email" type="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="telefonoA">Teléfono</label>
+        <input id="telefonoA" name="Telefono" type="tel" placeholder="+505 8787 6651">
+
+        <label for="mensajeA">Mensaje</label>
+        <textarea id="mensajeA" name="Mensaje" rows="5" placeholder="Describa brevemente su consulta" required></textarea>
+
+        <button type="submit">Enviar información (mailto)</button>
+    </form>
+
+    <hr style="margin:20px 0;">
+
+    <!-- Variante B: Formspree (recomendado si no tienes backend). Reemplaza YOUR_FORMSPREE_ENDPOINT por tu endpoint --> 
+    <form id="form-formspree" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" aria-label="Formulario de contacto (Formspree)">
+        <label for="nombreB">Nombre completo</label>
+        <input id="nombreB" name="name" type="text" placeholder="Ej. Juan Pérez" required>
+
+        <label for="emailB">Correo electrónico</label>
+        <input id="emailB" name="email" type="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="telefonoB">Teléfono</label>
+        <input id="telefonoB" name="phone" type="tel" placeholder="+505 8787 6651">
+
+        <label for="mensajeB">Mensaje</label>
+        <textarea id="mensajeB" name="message" rows="5" placeholder="Describa brevemente su consulta" required></textarea>
+
+        <!-- Opcional: redirigir a página de gracias -->
+        <input type="hidden" name="_next" value="https://TU-DOMINIO.com/gracias.html">
+
+        <button type="submit">Enviar información (Formspree)</button>
+    </form>
+
+    <p class="small">Al enviar este formulario aceptas que utilicemos tus datos únicamente para responder tu consulta. Si prefieres, envía un correo directamente a <a href="mailto:abg.jorgeacuna@gmail.com">abg.jorgeacuna@gmail.com</a>.</p>
+</section>
+
+<footer>
+    © 2026 – Servicios Jurídicos | Nicaragua
+</footer>
+
+</body>
+</html>
