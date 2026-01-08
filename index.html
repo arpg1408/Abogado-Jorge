@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es-NI">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios Jurídicos - Abogado Jorge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios jurídicos profesionales en Nicaragua. Asesoría en derecho corporativo, inmobiliario, civil, administrativo y laboral.">
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f6f8; color: #333; }
+        header { background-color: #1f3a5f; color: white; padding: 30px 20px; text-align: center; }
+        header img { width: 160px; border-radius: 50%; margin-top: 15px; object-fit: cover; }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        h2 { color: #1f3a5f; margin-bottom: 15px; }
+        .services { display: grid; grid-template-columns: 1fr; gap: 16px; }
+        .service-card { background: white; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+        .service-card h3 { margin: 0 0 8px 0; color: #1f3a5f; }
+        .office img { width: 100%; border-radius: 8px; margin-top: 15px; object-fit: cover; }
+        form { background: white; padding: 25px; border-radius: 8px; }
+        label { font-weight: bold; display: block; margin-top: 15px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { margin-top: 20px; padding: 12px; background-color: #1f3a5f; color: white; border: none; width: 100%; font-size: 16px; border-radius: 5px; cursor: pointer; }
+        button:focus, input:focus, textarea:focus { outline: 3px solid rgba(31,58,95,0.15); }
+        footer { background-color: #1f3a5f; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+        .small { font-size: 0.9rem; color: #666; margin-top: 10px; }
+        a { color: #1f3a5f; }
+        @media(min-width:700px){ .services{ grid-template-columns: 1fr 1fr; } }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Servicios Jurídicos Profesionales</h1>
+    <p>Asesoría legal integral y confiable</p>
+    <!-- Placeholder: reemplaza por img/perfil.jpg cuando subas la foto real -->
+    <img src="https://via.placeholder.com/400x400.png?text=Perfil+Abogado" alt="Retrato profesional del abogado con saco gris y camisa azul">
+</header>
+
+<section class="services" aria-labelledby="areas-practica">
+    <h2 id="areas-practica">Áreas de Práctica</h2>
+
+    <div class="service-card">
+        <h3>Derecho Corporativo</h3>
+        <p>Asesoría legal integral a empresas y sociedades mercantiles en su constitución, organización y operación. Incluye elaboración y revisión de estatutos, contratos comerciales, cumplimiento normativo, gobierno corporativo y acompañamiento legal permanente para la toma de decisiones empresariales.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Derecho Inmobiliario</h3>
+        <p>Asistencia legal en la compra, venta, arrendamiento y administración de bienes inmuebles. Comprende estudios registrales, elaboración de contratos, traspasos de propiedad, regularización de bienes y acompañamiento en proyectos inmobiliarios conforme a la legislación nicaragüense.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Derecho Civil y Comercial</h3>
+        <p>Representación y asesoría en asuntos civiles y mercantiles, incluyendo contratos, obligaciones, cobros judiciales y extrajudiciales, responsabilidad civil y solución de conflictos entre particulares o empresas, garantizando la protección de los derechos e intereses del cliente.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Derecho Administrativo</h3>
+        <p>Defensa y asesoría frente a entidades del Estado y municipalidades. Incluye trámites administrativos, recursos, licitaciones, permisos, concesiones y procedimientos sancionatorios, asegurando el debido proceso y el cumplimiento del marco legal vigente en Nicaragua.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Derecho Laboral</h3>
+        <p>Asesoría preventiva y representación en relaciones laborales tanto para empleadores como trabajadores. Incluye elaboración y revisión de contratos, manejo de despidos, negociaciones, cumplimiento normativo, procesos ante el Ministerio del Trabajo y defensa en conflictos laborales.</p>
+    </div>
+
+</section>
+
+<section aria-labelledby="contacto-info">
+    <h2 id="contacto-info">Información de Contacto</h2>
+    <p><strong>Teléfono:</strong> <a href="tel:+50587876651">+505 8787 6651</a></p>
+    <p><strong>Dirección:</strong> Oficentro Corporativo, Oficina 5, Pista Jean Paul Genie, contiguo a Grupo Q, Nicaragua</p>
+</section>
+
+<section class="office" aria-labelledby="ubicacion">
+    <h2 id="ubicacion">Ubicación de la Oficina</h2>
+    <!-- Placeholder: reemplaza por img/edificio.jpg cuando subas la foto real -->
+    <img src="https://via.placeholder.com/1200x600.png?text=Edificio+Oficinas" alt="Fachada y acceso vehicular de edificio de oficinas con estacionamiento subterráneo.">
+</section>
+
+<section aria-labelledby="formulario">
+    <h2 id="formulario">Formulario de Contacto</h2>
+
+    <form id="form-mailto" action="mailto:abg.jorgeacuna@gmail.com?subject=Consulta%20desde%20sitio%20web&body=Nombre:%20%0AEmail:%20%0ATeléfono:%20%0AMensaje:%20" method="post" enctype="text/plain" aria-label="Formulario de contacto (mailto)">
+        <label for="nombreA">Nombre completo</label>
+        <input id="nombreA" name="Nombre" type="text" placeholder="Ej. Juan Pérez" required>
+
+        <label for="emailA">Correo electrónico</label>
+        <input id="emailA" name="Email" type="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="telefonoA">Teléfono</label>
+        <input id="telefonoA" name="Telefono" type="tel" placeholder="+505 8787 6651">
+
+        <label for="mensajeA">Mensaje</label>
+        <textarea id="mensajeA" name="Mensaje" rows="5" placeholder="Describa brevemente su consulta" required></textarea>
+
+        <button type="submit">Enviar información (mailto)</button>
+    </form>
+
+    <hr style="margin:20px 0;">
+
+    <form id="form-formspree" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" aria-label="Formulario de contacto (Formspree)">
+        <label for="nombreB">Nombre completo</label>
+        <input id="nombreB" name="name" type="text" placeholder="Ej. Juan Pérez" required>
+
+        <label for="emailB">Correo electrónico</label>
+        <input id="emailB" name="email" type="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="telefonoB">Teléfono</label>
+        <input id="telefonoB" name="phone" type="tel" placeholder="+505 8787 6651">
+
+        <label for="mensajeB">Mensaje</label>
+        <textarea id="mensajeB" name="message" rows="5" placeholder="Describa brevemente su consulta" required></textarea>
+
+        <input type="hidden" name="_next" value="https://TU-DOMINIO.com/gracias.html">
+
+        <button type="submit">Enviar información (Formspree)</button>
+    </form>
+
+    <p class="small">Al enviar este formulario aceptas que utilicemos tus datos únicamente para responder tu consulta. Si prefieres, envía un correo directamente a <a href="mailto:abg.jorgeacuna@gmail.com">abg.jorgeacuna@gmail.com</a>.</p>
+</section>
+
+<footer>
+    © 2026 – Servicios Jurídicos | Nicaragua
+</footer>
+
+</body>
+</html>
